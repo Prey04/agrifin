@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'agrifin.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': postgresql://agrifin_sensors_user:3W3V41ZJHO07eHYNT0vk2lkiuG2JDCHH@dpg-cvsk8gbe5dus7396qc90-a/agrifin_sensors.config(default=os.getenv('DATABASE_URL'))
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
