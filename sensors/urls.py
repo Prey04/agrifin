@@ -4,4 +4,5 @@ from .views import *
 
 urlpatterns = [
     path('sensor/', SensorDataView.as_view(), name='all-sensor-data'),
+    path('device/', DeviceView.as_view(), name='device-data'),
 ]
